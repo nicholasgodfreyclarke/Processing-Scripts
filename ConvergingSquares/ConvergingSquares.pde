@@ -26,7 +26,7 @@ void draw() {
 
   }
 //  noLoop();
-  t = t +3;
+  t = t +6;
   
   saveFrame("ConvergingSquares###.gif");
   if(frameCount == numFrames)
