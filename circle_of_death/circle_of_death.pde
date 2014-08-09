@@ -42,8 +42,8 @@ void draw() {
       ellipse(150+cx + central_x_rotation+outer_x_rotation, cy + central_y_rotation+outer_y_rotation, diameter/3, diameter/3);
     
         for (int k = 1; k <= number; k++) {
-          outer2_x_rotation = diameter/4*cos(PI*t/32+2*PI*k/number);
-          outer2_y_rotation = diameter/4*sin(PI*t/32+2*PI*k/number);
+          outer2_x_rotation = diameter/4*cos(PI*t/16+2*PI*k/number);
+          outer2_y_rotation = diameter/4*sin(PI*t/16+2*PI*k/number);
           
           fill(color(127));
           ellipse(150+cx + central_x_rotation+outer_x_rotation+outer2_x_rotation, cy + central_y_rotation+outer_y_rotation+outer2_y_rotation, diameter/9, diameter/9);
@@ -54,9 +54,9 @@ void draw() {
   
   t = t +1;
   
-//  saveFrame("CirleOfDeath###.gif");
-//  if(frameCount == numFrames)
-//    exit(); 
+  saveFrame("CirleOfDeath###.gif");
+  if(frameCount == numFrames)
+    exit(); 
     
   print(t);
 }
